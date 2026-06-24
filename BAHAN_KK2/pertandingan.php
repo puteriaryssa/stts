@@ -103,8 +103,8 @@ body, html {
       
 	
 	<?php
-    
-      $dropdownQuery = "select nama_pertandingan from pertandingan";
+    include('connection.php');
+    $dropdownQuery = "select nama_pertandingan from pertandingan";
       $resultDrop = mysqli_query($conn, $dropdownQuery);
       $dropKelasQuery = "select nama from kelas";
       $resultKelas = mysqli_query($conn, $dropKelasQuery);
